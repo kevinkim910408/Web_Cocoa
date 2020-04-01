@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: greenyellow;
+      }
+      /*Position Static*/
+      .boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: hotpink;
+        position: static; /*포지션의 default값은 static, box가 지정한 자리에 계속 있음.*/
+      }
+      /*Position Fixed*/
+      .boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: gold;
+        position: fixed; /*박스가 스크롤에 움직임에 맞춰서 같이 움직임*/
+        /*포지션을 고정하고 4가지 설정값을 줄수있음--> 상 하 좌 우 간격*/
+        bottom: 30%;
+        left: 0;
+      }
+      /*Position Absolute*/
+      .boxThree {
+        height: 300px;
+        width: 300px;
+        background-color: silver;
+        position: absolute; /*부모 absolute*/
+      }
+      .abs-child {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        position: absolute; /*absolute를 쓰면 자식클래스는 부모클래스가 absolute를 썻나 찾으러감,
+        만약 부모도 썼으면, 부모박스 안에서 position을 변경가능, 만약 부모가 absolute가 아니면,
+        그냥 fixed에 설정값 준거처럼 자식박스가 움직이*/
+        right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxOne">
+      <div class="static-child"></div>
+    </div>
+
+    <div class="boxTwo">
+      <div class="fixed-child"></div>
+    </div>
+
+    <div class="boxThree">
+      <div class="abs-child"></div>
+    </div>
+  </body>
+</html>
