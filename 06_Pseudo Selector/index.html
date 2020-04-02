@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        Pseudo Selector
+        class나 id를 사용하지않고, 원하는 태그들을 불러올수있다.
+      */
+      input[type="submit"] {
+        background-color: red;
+      }
+      input[type="password"] {
+        background-color: blue;
+      }
+      input {
+        border: 5px solid yellow;
+      }
+
+      .box {
+        background-color: green;
+        height: 50px;
+        display: block;
+        border: 2px solid black;
+      }
+      .box:last-child {
+        background-color: pink;
+      }
+      .box:first-child {
+        background-color: gold;
+      }
+      .box:nth-child(2n) {
+        background-color: maroon;
+      }
+      .box:nth-child(3) {
+        background-color: indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <input type="password" />
+    <input type="submit" />
+  </body>
+</html>
