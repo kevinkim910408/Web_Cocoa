@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        font-size: 40px;
+        background-color: gold;
+        transition: all 2s ease-in-out;
+        /* 
+        하나만 transition 하고싶을땐, 바꾸고싶은거 쓰면 됌, 예) background-color 5s ease-in-out
+        ease-in-out은 서서히 바뀌는걸 말함
+        */
+      }
+      .box:hover {
+        background-color: darkblue;
+        color: white;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: darkgoldenrod;
+      }
+      .box2:hover {
+        transform: rotate(20deg);
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: transform 1s ease-in-out;
+      }
+      .box3:hover {
+        transform: rotate(10turn) scale(0.5, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      TEXT
+    </span>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+  </body>
+</html>
