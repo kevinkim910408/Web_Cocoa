@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+
+.buttonBox {
+  height: 50px;
+  width: 300px;
+  background-color: grey;
+  color: white;
+  border-radius: 100px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.picBox {
+  width: 120px;
+  height: 120px;
+  transition: all 1s ease-in-out;
+
+  position: relative;
+  left: 80px;
+  top: 30px;
+  /*I tried to make here with display:flex, but i am not sure why it didnt work.. */
+}
+
+.buttonBox:hover {
+  box-shadow: 3px 6px black;
+}
+
+.buttonBox:hover ~ .picBox {
+  transform: rotate(10turn) scale(0.2, 0.2);
+  border: 5px solid black;
+}
