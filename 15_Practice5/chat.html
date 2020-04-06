@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/615a5dd13f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Challenge 5</title>
+    <style>
+      /*
+      body {
+        height: 100%;
+        background-color: pink;
+      }
+      .box {
+        width: 500px;
+        height: 700px;
+        border: 7px solid rebeccapurple;
+        background-color: ghostwhite;
+      }
+
+
+      .updates__box {
+        margin: 20px;
+        width: 450px;
+        height: 400px;
+        background-color: white;
+      }
+
+      .updates__box2{
+        margin: 20px;
+        width: 450px;
+        height: 100px;
+        background-color: white;
+      }
+
+      .updates-avatar {
+        width: 10%;
+        border-radius: 100%;
+      }
+      .comments-avatar {
+        width: 15%;
+        border-radius: 100%;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <!--Main Background -->
+    <div class="box">
+      <!--Header-->
+      <div class="header-icon">
+        <a href="index.html">
+          <i class="fas fa-arrow-left fa-3x"></i>
+        </a>
+      </div>
+      <!--Main -->
+      <main class="updates">
+        <div class="updates__box">
+          <!--Main header-->
+          <div class="updates-header">
+            <div class="updates__column">
+              <img class="updates-avatar" src="images/avatar.jpg" />
+              <div class="updates-name">Sam Martin</div>
+              <div class="updates-timestamp">5 min</div>
+            </div>
+            <div class="updates__column">
+              <div class="updates-icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+          <!--Main body-->
+          <div class="updates-body">
+            <img class="updates-avatarBody" src="images/avatar.jpg" />
+          </div>
+          <!--Main footer-->
+          <div class="updates-footer">
+            <div class="updates__column">
+              <div class="updates-icon">
+                <i class="far fa-heart"></i>
+                <span class="updates_likes">2,515</span>
+              </div>
+              <div class="updates-icon">
+                <i class="far fa-comment-alt">350</i>
+              </div>
+            </div>
+            <div class="updates__column">
+              <div class="updates-icon">
+                <i class="far fa-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="updates__box2">
+        <div class="updates-header">
+        <div class="updates__comments">
+          <img class="comments-avatar" src="images/avatar.jpg" />
+          <span class="comments-name">Angel</span>
+          <span class="comments-comments">Looks so good</span>
+          <div class="comments-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+      </div>
+      </main>
+
+      <!-- footer-->
+      <footer class="footers">
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+        </div>
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="fas fa-search fa-2x"></i>
+            <i class="far fa-plus-square fa-2x"></i>
+            <i class="far fa-heart fa-2x"></i>
+          </div>
+        </div>
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="far fa-user fa-2x"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

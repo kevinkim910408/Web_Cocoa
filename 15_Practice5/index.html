@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/615a5dd13f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Challenge 5</title>
+    <style>
+      body {
+        height: 100%;
+        background-color: pink;
+      }
+      /*  Main Background */
+      .box {
+        width: 500px;
+        height: 700px;
+        border: 7px solid rebeccapurple;
+        background-color: ghostwhite;
+      }
+
+      /* highlights */
+
+      .highlight-avatar {
+        width: 15%;
+        border-radius: 100%;
+      }
+
+      /* updates */
+
+      .updates__box {
+        margin: 20px;
+        width: 450px;
+        height: 400px;
+        background-color: white;
+      }
+
+      .updates-avatar {
+        width: 10%;
+        border-radius: 100%;
+      }
+
+      /* comments */
+      .comments__box {
+        z-index: 1;
+        margin: 20px;
+        width: 450px;
+        height: 400px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Main Background -->
+    <div class="box">
+      <!--Header -->
+      <header class="header">
+        <div class="header__column">
+          <span class="header-title">
+            INSTAGRAM
+          </span>
+        </div>
+        <div class="header__column">
+          <div class="header__icon">
+            <i class="fas fa-tv"></i>
+          </div>
+          <div class="header__icon">
+            <i class="far fa-paper-plane"></i>
+          </div>
+        </div>
+        <!--Highlight -->
+        <img class="highlight-avatar" src="images/avatar.jpg" />
+        <img class="highlight-avatar" src="images/avatar.jpg" />
+        <img class="highlight-avatar" src="images/avatar.jpg" />
+        <img class="highlight-avatar" src="images/avatar.jpg" />
+        <img class="highlight-avatar" src="images/avatar.jpg" />
+      </header>
+      <!--Main -->
+      <main class="updates">
+        <div class="updates__box">
+          <!--Click to chat.html -->
+          <a href="chat.html">
+            <!--Main header-->
+            <div class="updates-header">
+              <div class="updates__column">
+                <img class="updates-avatar" src="images/avatar.jpg" />
+                <div class="updates-name">Sam Martin</div>
+                <div class="updates-timestamp">5 min</div>
+              </div>
+              <div class="updates__column">
+                <div class="updates-icon">
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+              </div>
+            </div>
+            <!--Main body-->
+            <div class="updates-body">
+              <img class="updates-avatarBody" src="images/avatar.jpg" />
+            </div>
+            <!--Main footer-->
+            <div class="updates-footer">
+              <div class="updates__column">
+                <div class="updates-icon">
+                  <i class="far fa-heart"></i>
+                  <span class="updates_likes">2,515</span>
+                </div>
+                <div class="updates-icon">
+                  <i class="far fa-comment-alt">350</i>
+                </div>
+              </div>
+              <div class="updates__column">
+                <div class="updates-icon">
+                  <i class="far fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+      <!-- footer-->
+      <footer class="footers">
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+        </div>
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="fas fa-search fa-2x"></i>
+            <i class="far fa-plus-square fa-2x"></i>
+            <i class="far fa-heart fa-2x"></i>
+          </div>
+        </div>
+        <div class="footers__column">
+          <div class="footers-icon">
+            <i class="far fa-user fa-2x"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
