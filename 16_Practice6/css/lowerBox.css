@@ -1,0 +1,76 @@
+/* upperBox*/
+.lowerBox {
+  width: 400px;
+  height: 370px;
+  background-color: white;
+  border: 7px solid black;
+  border-radius: 5%;
+}
+
+.lowerBox-upperBackground {
+  width: 400px;
+  height: 150px;
+  background-color: gold;
+  border-radius: 3%;
+}
+
+.lowerBox-profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lowerBox-image {
+  width: 100px;
+  margin-top: 90px;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.lowerBox-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.lowerBox-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.lowerBox-intro {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.lowerBox-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.followBox {
+  width: 120px;
+  height: 50px;
+  background-color: royalblue;
+  border-radius: 8%;
+  color: honeydew;
+}
+
+.messageBox {
+  width: 120px;
+  height: 50px;
+  background-color: honeydew;
+  border-radius: 8%;
+  color: royalblue;
+}
