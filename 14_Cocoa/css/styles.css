@@ -3,6 +3,10 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
 
 body {
   background-color: white;
@@ -19,4 +23,5 @@ body {
 /*Link에 쓰이는 모든 색상들은 제일 기본색상을 상속한다는 뜻임 */
 a {
   color: inherit;
+  text-decoration: none;
 }
